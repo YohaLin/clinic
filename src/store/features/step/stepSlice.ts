@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import Step from '../../../constants/stepEnum'
 
 const initialState = {
-  value: Step.datas,
+  value: Step.items,
 }
 
 export const stepSlice = createSlice({

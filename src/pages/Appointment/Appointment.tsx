@@ -25,27 +25,27 @@ const Appointment = () => {
     switch (step) {
       case 1:
         // 放 fetch
-        console.log("to 2");
+        // console.log("to 2");
         dispatch(nextStepAction());
         break;
       case 2:
         // 放 fetch
-        console.log("to 3");
+        // console.log("to 3");
         dispatch(nextStepAction());
         break;
       case 3:
         // 放 fetch
-        console.log("to 4");
+        // console.log("to 4");
         dispatch(nextStepAction());
         break;
       case 4:
         // 放 fetch
-        console.log("to 5");
+        // console.log("to 5");
         dispatch(nextStepAction());
         break;
       case 5:
         // 放 fetch
-        console.log("complete");
+        // console.log("complete");
         // 先跳回第一步，之後再改
         dispatch(getStepAction(Step.items));
         break;

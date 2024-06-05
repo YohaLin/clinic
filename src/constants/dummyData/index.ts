@@ -1,31 +1,30 @@
 import Step from "../stepEnum";
 
-
 const stepperList = [
   {
     step: Step.items,
     text: "選項目",
-    value: "items"
+    value: "items",
   },
   {
     step: Step.doctors,
     text: "選醫師",
-    value: "doctors"
+    value: "doctors",
   },
   {
     step: Step.dates,
     text: "選日期",
-    value: "dates"
+    value: "dates",
   },
   {
     step: Step.datas,
     text: "填資料",
-    value: "datas"
+    value: "datas",
   },
   {
     step: Step.complete,
     text: "完成",
-    value: "complete"
+    value: "complete",
   },
 ];
 
@@ -56,43 +55,48 @@ const itemList = [
   },
 ];
 
-
 const doctorList = [
   {
     id: 0,
     name: "陳星皓",
-    description: "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../public/avatar.svg"
+    description:
+      "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
+    image: "../../../public/avatar.svg",
   },
   {
     id: 1,
     name: "廖韻如",
-    description: "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../public/avatar.svg"
+    description:
+      "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
+    image: "../../../public/avatar.svg",
   },
   {
     id: 2,
     name: "顏凱翔",
-    description: "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../public/avatar.svg"
+    description:
+      "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
+    image: "../../../public/avatar.svg",
   },
   {
     id: 3,
     name: "甄士凱",
-    description: "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../public/avatar.svg"
+    description:
+      "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
+    image: "../../../public/avatar.svg",
   },
   {
     id: 4,
     name: "李忠明",
-    description: "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../public/avatar.svg"
+    description:
+      "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
+    image: "../../../public/avatar.svg",
   },
   {
     id: 5,
     name: "李詩婷",
-    description: "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../public/avatar.svg"
+    description:
+      "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
+    image: "../../../public/avatar.svg",
   },
 ];
 
@@ -129,4 +133,11 @@ const nightClinicList = [
   { id: 6, time: "21:30" },
 ];
 
-export {stepperList, itemList, doctorList, morningClinicList, afternoonClinicList, nightClinicList }
+export {
+  stepperList,
+  itemList,
+  doctorList,
+  morningClinicList,
+  afternoonClinicList,
+  nightClinicList,
+};

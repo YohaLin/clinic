@@ -12,7 +12,6 @@ const Datas = () => {
     setTreatmentType(e.target.value);
   };
 
-  console.log(treatmentType);
   return (
     <AppointmentCardLayout
       style="w-full h-fit px-3 py-8 lg:w-[600px] lg:px-8"
