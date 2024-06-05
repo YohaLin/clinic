@@ -1,4 +1,5 @@
 import Step from "../stepEnum";
+import avatar from "../../../public/avatar.svg"
 
 const stepperList = [
   {
@@ -61,42 +62,42 @@ const doctorList = [
     name: "陳星皓",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "/public/avatar.svg",
+    image: avatar
   },
   {
     id: 1,
     name: "廖韻如",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "/public/avatar.svg",
+    image: avatar
   },
   {
     id: 2,
     name: "顏凱翔",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "/public/avatar.svg",
+    image: avatar
   },
   {
     id: 3,
     name: "甄士凱",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../../public/avatar.svg",
+    image: avatar
   },
   {
     id: 4,
     name: "李忠明",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "/public/avatar.svg",
+    image: avatar
   },
   {
     id: 5,
     name: "李詩婷",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "/public/avatar.svg",
+    image: avatar
   },
 ];
 
