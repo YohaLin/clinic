@@ -61,21 +61,21 @@ const doctorList = [
     name: "陳星皓",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../../public/avatar.svg",
+    image: "/public/avatar.svg",
   },
   {
     id: 1,
     name: "廖韻如",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../../public/avatar.svg",
+    image: "/public/avatar.svg",
   },
   {
     id: 2,
     name: "顏凱翔",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../../public/avatar.svg",
+    image: "/public/avatar.svg",
   },
   {
     id: 3,
@@ -89,14 +89,14 @@ const doctorList = [
     name: "李忠明",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../../public/avatar.svg",
+    image: "/public/avatar.svg",
   },
   {
     id: 5,
     name: "李詩婷",
     description:
       "贋復牙科（固定假牙、活動假牙、全口重建、顳顎關節治療）、一般牙疾診治",
-    image: "../../../public/avatar.svg",
+    image: "/public/avatar.svg",
   },
 ];
 
