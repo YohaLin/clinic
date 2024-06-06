@@ -5,7 +5,7 @@ import bell from "../assets/bell.svg";
 import clsx from "clsx";
 import AuthButton from "../components/AuthButton";
 import MenuList from "../components/MenuList";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Header: React.FC<{
   stage: "frontstage" | "backstage";
@@ -13,15 +13,20 @@ const Header: React.FC<{
   showHamburgerModal: boolean;
   setShowHamburgerModal: (showHamburgerModal: boolean) => void;
 }> = ({ stage, isLogin, showHamburgerModal, setShowHamburgerModal }) => {
+  const { lang } = useParams();
+
   return (
     <div
       className={clsx("fixed z-50 top-0 left-0 w-full h-fit backdrop-blur-sm", {
-        "bg-neutral-400": stage === "backstage"
+        "bg-neutral-400": stage === "backstage",
       })}
     >
       <div className="flex items-center justify-between w-full h-[54px] md:h-16 lg:max-w-[1200px] mx-auto px-2.5 lg:px-3">
         {/* logo */}
-        <Link className="flex items-center gap-2 px-2 lg:gap-[10px] lg:px-2.5" to="/">
+        <Link
+          className="flex items-center gap-2 px-2 lg:gap-[10px] lg:px-2.5"
+          to={`/${lang}/`}
+        >
           <img
             src={logo}
             alt="logo"
@@ -43,7 +48,7 @@ const Header: React.FC<{
 
         {/* auth btn */}
         <AuthButton isLogin={isLogin} name="劉小萍" />
-
+        
         {/* hamburger */}
         <img
           src={hamburger}

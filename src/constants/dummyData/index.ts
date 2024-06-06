@@ -1,33 +1,5 @@
-import Step from "../stepEnum";
 import avatar from "../../../public/avatar.svg"
 
-const stepperList = [
-  {
-    step: Step.items,
-    text: "選項目",
-    value: "items",
-  },
-  {
-    step: Step.doctors,
-    text: "選醫師",
-    value: "doctors",
-  },
-  {
-    step: Step.dates,
-    text: "選日期",
-    value: "dates",
-  },
-  {
-    step: Step.datas,
-    text: "填資料",
-    value: "datas",
-  },
-  {
-    step: Step.complete,
-    text: "完成",
-    value: "complete",
-  },
-];
 
 const itemList = [
   {
@@ -135,7 +107,6 @@ const nightClinicList = [
 ];
 
 export {
-  stepperList,
   itemList,
   doctorList,
   morningClinicList,

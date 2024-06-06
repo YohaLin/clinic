@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 const Home = () => {
+  const { lang } = useParams();
+
   return (
-    <div className="relative h-screen w-screen">
+      <div className="relative h-screen w-screen">
         {/* 開始掛號字樣 */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center gap-12 w-screen">
           <div className="flex flex-col justify-center items-center gap-6">
@@ -18,7 +20,10 @@ const Home = () => {
             </div>
           </div>
 
-          <Link className="flex justify-center items-center px-[18px] py-2.5 rounded-md bg-blue-100 text-blue-500 text-d3" to="/appointment">
+          <Link
+            className="flex justify-center items-center px-[18px] py-2.5 rounded-md bg-blue-100 text-blue-500 text-d3"
+            to={`/${lang}/appointment`}
+          >
             開始掛號
           </Link>
         </div>
@@ -29,7 +34,7 @@ const Home = () => {
           src={logo}
           alt="logo"
         />
-    </div>
+      </div>
   );
 };
 

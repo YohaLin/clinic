@@ -1,21 +1,21 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
 import HamburgerMenu from "../components/HamburgerMenu";
 
 const DefaultLayout: React.FC<{
-  children: ReactNode;
   stage: "frontstage" | "backstage";
   isLogin: boolean;
   showHamburgerModal: boolean;
   setShowHamburgerModal: (showHamburgerModal: boolean) => void;
 }> = ({
-  children,
   stage,
   isLogin,
   showHamburgerModal,
   setShowHamburgerModal,
 }) => {
+  
   return (
     <div className="relative w-full h-full min-h-screen bg-home-background bg-center bg-cover">
       {showHamburgerModal && (
@@ -32,7 +32,7 @@ const DefaultLayout: React.FC<{
       />
       
       <div className="">
-        {children}
+        <Outlet /> {/* 取代 children */}
       </div>
       <Footer />
     </div>

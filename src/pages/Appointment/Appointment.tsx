@@ -60,44 +60,44 @@ const Appointment = () => {
   };
 
   return (
-    <AppointmentLayout title="我要掛號" type="appointment" step={step}>
-      <div className="flex flex-col w-full h-fit">
-        {step === Step.items && <Items />}
-        {step === Step.doctors && <Doctors />}
-        {step === Step.dates && <Dates />}
-        {step === Step.datas && <Datas />}
-        {step === Step.complete && <Complete />}
-      </div>
+      <AppointmentLayout title="我要掛號" type="appointment" step={step}>
+        <div className="flex flex-col w-full h-fit">
+          {step === Step.items && <Items />}
+          {step === Step.doctors && <Doctors />}
+          {step === Step.dates && <Dates />}
+          {step === Step.datas && <Datas />}
+          {step === Step.complete && <Complete />}
+        </div>
 
-      <div
-        className={clsx("flex w-full gap-3", {
-          "justify-end": step === Step.items,
-          "justify-center": step === Step.complete,
-          "justify-between": step !== Step.items && step !== Step.complete,
-        })}
-      >
-        {step !== Step.items && step !== Step.complete && (
-          <ProgressButton
-            style="bg-neutral-100 border border-neutral-400"
-            text="返回"
-            onClick={handleLast}
-          />
-        )}
-        <ProgressButton
-          style={clsx("bg-green-500 text-white shadow-neutral-2", {
-            "sm:w-fit": step === Step.complete,
+        <div
+          className={clsx("flex w-full gap-3", {
+            "justify-end": step === Step.items,
+            "justify-center": step === Step.complete,
+            "justify-between": step !== Step.items && step !== Step.complete,
           })}
-          text={
-            step === Step.datas
-              ? "確定掛號"
-              : step === Step.complete
-                ? "完成掛號"
-                : "下一步"
-          }
-          onClick={handleNext}
-        />
-      </div>
-    </AppointmentLayout>
+        >
+          {step !== Step.items && step !== Step.complete && (
+            <ProgressButton
+              style="bg-neutral-100 border border-neutral-400"
+              text="返回"
+              onClick={handleLast}
+            />
+          )}
+          <ProgressButton
+            style={clsx("bg-green-500 text-white shadow-neutral-2", {
+              "sm:w-fit": step === Step.complete,
+            })}
+            text={
+              step === Step.datas
+                ? "確定掛號"
+                : step === Step.complete
+                  ? "完成掛號"
+                  : "下一步"
+            }
+            onClick={handleNext}
+          />
+        </div>
+      </AppointmentLayout>
   );
 };
 
